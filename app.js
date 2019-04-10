@@ -59,8 +59,8 @@ console.log(req.body);
   //console.log(sql)
     connection.query(sql, function (err, result) {
         if (err) throw err;
-        console.log("table created");
-        res.status(200).json("Successful!");
+        console.log("values updated!");
+        res.status(200).json({message: "Success"});
     });
   
 });
