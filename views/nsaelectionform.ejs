@@ -1,0 +1,330 @@
+<% include partials/header %>
+  <div class="container groove">
+    <div class="text-center">
+      <h1>NSA ULM Officers Application for year 2019-20</h1>
+    </div>
+    <div class="text-center">
+      <img src="images/nsalogo.jpg" class="rounded" alt="nsalogo" height=200px width=200px>
+    </div>
+    <div class="text-center">
+      <p>NSA ULM election for the year 2019-20 will take place on April 17, Wed and april 18, Thu. The election will
+        start on April 17 at 8:00 am and end on April 18 at 11:59 pm. All candidates must show up on April 13, Sat 5-9
+        pm for their election speech.
+      </p>
+    </div>
+
+
+    <form action="/election" method="POST" id = "#nsaelection">
+      <div class="form-group row">
+        <div class="col-md-4">
+          <label for="firstName">First Name<span class="red">*</span></label>
+          <input type="text" class="form-control" placeholder="First name" name="fname" required>
+        </div>
+
+        <div class="col-md-4">
+          <label for="firstName">Middle Name</label>
+          <input type="text" class="form-control" placeholder="Middle name" name="mname">
+        </div>
+
+        <div class="col-md-4">
+          <label for="lastName">Last Name<span class="red">*</span></label>
+          <input type="text" class="form-control" placeholder="Last name" name="lname" required>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <div class="col-md-6">
+          <label for="inputEmail">Warhawk email<span class="red">*</span></label>
+          <input type="email" class="form-control" id="inputEmail" placeholder="example@warhawks.ulm.edu" name="email"
+            required>
+        </div>
+
+        <div class="col-md-6">
+          <label for="inputEmail1">Gmail<span class="red">*</span></label>
+          <input type="email" class="form-control" id="inputEmail1" placeholder="example@gmail.com" name="gmail"
+            required>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <div class="col-md-6">
+          <label for="cwid">CWID<span class="red">*</span></label>
+          <input type="text" pattern="[0-9]{8}" class="form-control" id="cwid" placeholder="3XXXXXXX" name="cwid"
+            required>
+        </div>
+
+        <div class="col-md-6">
+          <label for="phone">Phone Number<span class="red">*</span></label>
+          <input type="tel" class="form-control" placeholder="XXX-XXX-XXXX" name="phone" required>
+
+        </div>
+      </div>
+
+
+      <div class="form-group row">
+        <div class="col-md-6">
+          <label for="inputAddress">Address <span class="red">*</span></label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" name="address1" required>
+        </div>
+
+        <div class="col-md-6">
+          <label for="inputAddress2">Address 2 <span class="red">*</span></label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio,or floor"
+            name="address2">
+        </div>
+      </div> 
+
+
+      <div class="form-group row">
+        <div class="col-md-4">
+          <label for="inputCity">City<span class="red">*</span></label>
+          <input type="text" class="form-control" id="inputCity" name="city" required>
+        </div> 
+        <div class="col-md-4">
+          <label for="inputState">State</label>
+          <select id="inputState" class="form-control" name = "state">
+            <option selected>Choose State</option>
+            <option value="Alabama">Alabama</option>
+            <option value="Alaska">Alaska</option>
+            <option value="Arizona">Arizona</option>
+            <option value="Arkansas">Arkansas</option>
+            <option value="California">California</option>
+            <option value="Colorado">Colorado</option>
+            <option value="Connecticut">Connecticut</option>
+            <option value="Delaware">Delaware</option>
+            <option value="District Of Columbia">District Of Columbia</option>
+            <option value="Florida">Florida</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Hawaii">Hawaii</option>
+            <option value="Idaho">Idaho</option>
+            <option value="Illinois">Illinois</option>
+            <option value="Indiana">Indiana</option>
+            <option value="Iowa">Iowa</option>
+            <option value="Kansas">Kansas</option>
+            <option value="Kentucky">Kentucky</option>
+            <option value="Louisiana">Louisiana</option>
+            <option value="Maine">Maine</option>
+            <option value="Maryland">Maryland</option>
+            <option value="Massachusetts">Massachusetts</option>
+            <option value="Michigan">Michigan</option>
+            <option value="Minnesota">Minnesota</option>
+            <option value="Mississippi">Mississippi</option>
+            <option value="Missouri">Missouri</option>
+            <option value="Montana">Montana</option>
+            <option value="Nebraska">Nebraska</option>
+            <option value="Nevada">Nevada</option>
+            <option value="New Hampshire">New Hampshire</option>
+            <option value="New Jersey">New Jersey</option>
+            <option value="New Mexico">New Mexico</option>
+            <option value="New York">New York</option>
+            <option value="North Carolina">North Carolina</option>
+            <option value="North Dakota">North Dakota</option>
+            <option value="Ohio">Ohio</option>
+            <option value="Oklahoma">Oklahoma</option>
+            <option value="Oregon">Oregon</option>
+            <option value="Pennsylvania">Pennsylvania</option>
+            <option value="Rhode Island">Rhode Island</option>
+            <option value="South Carolina">South Carolina</option>
+            <option value="South Dakota">South Dakota</option>
+            <option value="Tennessee">Tennessee</option>
+            <option value="Texas">Texas</option>
+            <option value="Utah">Utah</option>
+            <option value="Vermont">Vermont</option>
+            <option value="Virginia">Virginia</option>
+            <option value="Washington">Washington</option>
+            <option value="West Virginia">West Virginia</option>
+            <option value="Wisconsin">Wisconsin</option>
+            <option value="Wyoming">Wyoming</option>
+          </select>
+        </div>
+        < <div class="col-md-4">
+          <label for="inputZip">Zip<span class="red">*</span></label>
+          <input type="text" class="form-control" id="inputZip" name="zip" required>
+        </div> 
+      </div> 
+
+
+       <div class="form-group row">
+        <div class="col-sm-1">
+          <label for="majors">Majors<span class="red">*</span></label>
+        </div>
+
+        <div class="col-sm-3">
+          <select class="custom-select" name="major">
+            <option selected>Majors</option>
+            <option value="Accounting">Accounting</option>
+            <option value="Agribusiness">Agribusiness</option>
+            <option value="Art">Art</option>
+            <option value="Atmospheric Science">Atmospheric Science</option>
+            <option value="Biology">Biology</option>
+            <option value="Business">Business</option>
+            <option value="Communication">Communication</option>
+            <option value="Computer Information Systems">Computer Information Systems</option>
+            <option value="Computer Science">Computer Science</option>
+            <option value="Construction Management">Construction Management</option>
+            <option value="Counseling">Counseling</option>
+            <option value="Criminal Justice">Criminal Justice</option>
+            <option value="Dental Hygiene">Dental Hygiene</option>
+            <option value="Education: Curriculum and Instruction">Education: Curriculum and Instruction</option>
+            <option value="Educational Leadership">Educational Leadership</option>
+            <option value="English">English</option>
+            <option value="Finance">Finance</option>
+            <option value="General Studies">General Studies</option>
+            <option value="Gerontology">Gerontology</option>
+            <option value="Health Studies">Health Studies</option>
+            <option value="History">History</option>
+            <option value="Kinesiology">Kinesiology</option>
+            <option value="Management">Management</option>
+            <option value="Marketing">Marketing</option>
+            <option value="Marriage & Family Therapy">Marriage & Family Therapy</option>
+            <option value="Mathematics">Mathematics</option>
+            <option value="Medical Laboratory Science">Medical Laboratory Science</option>
+            <option value="Music">Music</option>
+            <option value="Nursing">Nursing</option>
+            <option value="Occupational Therapy">Occupational Therapy</option>
+            <option value="Pharmacy">Pharmacy</option>
+            <option value="Political Science">Political Science</option>
+            <option value="Psychology">Psychology</option>
+            <option value="Radiologic Technolog">Radiologic Technology</option>
+            <option value="Risk Management & Insurance">Risk Management & Insurance</option>
+            <option value="Social Work">Social Work</option>
+            <option value="Speech-Language Pathology">Speech-Language Pathology</option>
+            <option value="Toxicology">Toxicology</option>
+            <option value="Unmanned Aircraft Systems Management">Unmanned Aircraft Systems Management</option>
+            <option value="World Langauges: French">World Langauges: French</option>
+            <option value="World Langauges: Spanish">World Langauges: Spanish</option>
+
+          </select>
+        </div>
+
+        <div class="col-sm-2">
+          <label for="classification">Classification<span class="red">*</span></label>
+        </div>
+
+        <div class="col-sm-2">
+          <select class="custom-select" name="classification">
+            <option selected>Classification</option>
+            <option value="Freshmen">Freshmen</option>
+            <option value="Sophomore">Sophomore</option>
+            <option value="Junior">Junior</option>
+            <option value="Senior">Senior</option>
+            <option value="Graduate">Graduate</option>
+            <option value="PhD">PhD</option>
+          </select>
+        </div>
+
+        <div class="col-sm-1">
+          <label for="memberSince">Member Since<span class="red">*</span></label>
+        </div>
+
+        <div class="col-sm-3">
+          <select class="custom-select" name="membership">
+            <option selected>Member Since</option>
+            <option value="2014">2014</option>
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>C
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+          </select>
+        </div>
+      </div> 
+
+      <div class="form-group row">
+        <div class="col-sm-3">Position applied for<span class="red">*</span></div>
+        <div class="col-sm-9">
+          <div class="form-check">
+            <input class="form-check-input" value="president" type="checkbox" name='position' id="gridCheck1">
+            <label class="form-check-label" for="gridCheck1">President</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" value="vpCampus" type="checkbox" name='position' id="gridCheck1">
+            <label class="form-check-label" for="gridCheck2">Vice President: Campus Affairs</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" value="vpCulture" type="checkbox" name='position' id="gridCheck1">
+            <label class="form-check-label" for="gridCheck3">Vice President: Cultural Affairs</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" value="secretary" type="checkbox" name='position' id="gridCheck1">
+            <label class="form-check-label" for="gridCheck4">Secretary</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" value="treasurer" type="checkbox" name='position' id="gridCheck1">
+            <label class="form-check-label" for="gridCheck4">Treasurer</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" value="actTreasurer" type="checkbox" name='position' id="gridCheck1">
+            <label class="form-check-label" for="gridCheck4">Acting Treasurer</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" value="pro" type="checkbox" name='position' id="gridCheck1">
+            <label class="form-check-label" for="gridCheck4">Public Relation Officer</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" value="webmaster" type="checkbox" name='position' id="gridCheck1">
+            <label class="form-check-label" for="gridCheck4">Webmaster</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" value="freshmen" type="checkbox" name='position' id="gridCheck1">
+            <label class="form-check-label" for="gridCheck4">Freshmen Representative</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" value="sophomore" type="checkbox" name='position' id="gridCheck1">
+            <label class="form-check-label" for="gridCheck4">Sophomore
+              Representative
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" value="junior" type="checkbox" name='position' id="gridCheck1">
+            <label class="form-check-label" for="gridCheck4">Junior Representative</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" value="senior" type="checkbox" name='position' id="gridCheck1">
+            <label class="form-check-label" for="gridCheck4">Senior Representative</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" value="graduate" type="checkbox" name='position' id="gridCheck1">
+            <label class="form-check-label" for="gridCheck4">Graduate/Post Graduate Chair</label>
+          </div>
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="col-sm-3">Why did you apply for the position above?<span class="red">*</span> </div>
+        <div class="col-sm-9">
+          <textarea class="form-control" id="exampleFormControlTextarea1" name="reason" rows="5"
+            required></textarea>
+        </div>
+      </div>
+
+        <div class="form-group row">
+        <div class="col-sm-3">What are the contributions that you have made being an NSA member?<span
+            class="red">*</span> </div>
+        <div class="col-sm-9">
+          <textarea class="form-control" id="exampleFormControlTextarea1" name="contribution" rows="5"
+            required></textarea>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <div class="col-sm-3">What are the changes that you plan to bring as a member of the Executive Council of
+          NSA?<span class="red">*</span> </div>
+        <div class="col-sm-9">
+          <textarea class="form-control" id="exampleFormControlTextarea1" name="change" rows="5" required></textarea>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <div class="col-sm-3">List all your involvement at ULM and your High School(High School experiences for Freshmen
+          only).<span class="red">*</span> </div>
+        <div class="col-sm-9">
+          <textarea class="form-control" id="exampleFormControlTextarea1" name="involvement" rows="5"
+            required></textarea>
+        </div>
+      </div>
+       
+      <button type="submit" class="btn btn-primary">Submit your application</button>
+    </form>
+
+  </div>
+  <% include partials/footer %>

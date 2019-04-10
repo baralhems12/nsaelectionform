@@ -1,0 +1,115 @@
+.note {
+    font-size: .8rem;
+}
+.red {
+    color: red;
+}
+.custom-select {
+    width: 100%!important;
+    color: #800029;
+}
+
+.custom-select:focus {
+    color: #0e0d0d;
+    background-color: #fff;
+    border-color: #800029;
+    outline: 0;
+    box-shadow: 0 0 0 0.1rem #800029;
+}
+div.groove {
+    border: 3px groove #800029;
+    margin: 25px auto;
+    padding: 50px auto;
+    box-shadow: 4px -2px #BD955A;
+    background-color: #f8f9fa;
+}
+
+
+.container.groove {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+body{
+    color: #800029;
+}
+.text-center {
+    background-color: #f4e7d2;
+    padding: 10px;
+    margin: 5px;
+    border: 1px groove #800029;
+}
+
+ /* #lightgold {
+    background-color: #f4e7d2;
+    text-align: center;
+ } */
+
+ /* .h1, h1 {
+    background-color: #f4e7d2;
+    text-align: center;
+ } */
+
+p{
+    text-align: justify;
+}
+
+.form-group {
+    padding: 10px;
+    margin: 5px;
+    background-color: #f4e7d2;
+    border: 1px groove #800029;
+}
+
+.btn-primary {
+    color:  #f4e7d2;
+    border-color:  #f4e7d2;
+    padding: 10px;
+    margin: 5px;
+    background-color:#800029;
+}
+
+.btn-primary:hover {
+    color: #800029;
+    background-color: #f4e7d2;
+    border-color: #800029;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    color: #f4e7d2;
+    background-color: #800029;
+    border-color: #f4e7d2;
+}
+
+.btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem #f4e7d2;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem #f4e7d2;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1.2rem;
+    color: #800029;
+    background-color: #f8f9fa;
+    background-clip: padding-box;
+    border: 1px groove #800029;
+    border-radius: .25rem;
+    transition: border-color .15s ease-out,box-shadow .15s ease-in-out;
+}
+
+.form-control:focus {
+    color: #0e0d0d;
+    background-color: #fff;
+    border-color: #800029;
+    outline: 0;
+    box-shadow: 0 0 0 0.1rem #800029;
+}
+img {
+    vertical-align: middle;
+    border: 1px groove #800029;
+}
